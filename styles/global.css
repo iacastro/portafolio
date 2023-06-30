@@ -1,0 +1,530 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-glow {
+    transition: text-shadow 0.5s ease-in-out;
+  }
+  .text-glow:hover {
+    text-shadow: 0 0 5px rgb(255, 255, 255); /* Color y opacidad de la sombra del texto */
+  }
+
+.escritura-h1{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgb(118, 242, 159);
+    animation: animacionIntro  2.5s steps(100),
+    animacionBar 1s step-end;
+}
+
+  .escritura-h1 span{
+    transition: text-shadow 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .escritura-h1 span:hover {
+    color: rgb(238, 238, 238);
+    text-shadow: 0 0 5px rgb(118, 242, 159);
+  }
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .dinamic-text{
+  margin-left: 15px;
+  height: 39px;
+  overflow: hidden;
+}
+
+.dinamic-text li{
+  color:rgb(118, 242, 159);
+  list-style: none;
+  position: relative;
+  top: 0;
+
+  animation: slide 9s steps(3)
+  infinite;
+}
+
+h4.habilidades-texto.break-inside-avoid-column{
+  transition: text-shadow 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+h4.habilidades-texto.break-inside-avoid-column:hover{
+  color: rgb(245, 245, 245);
+  text-shadow: 0 0 10px rgb(118, 242, 159);
+}
+
+.letrero {
+  border-radius: 0.4rem;
+  animation: parpadeo 5s steps(100) infinite
+}
+
+/* .tipeoled{
+  top: 60px;
+  position: relative;
+  animation: aparicion 4s steps(200);
+} */
+
+.tipeoled span{
+  top: 30px;
+  position: relative;
+  opacity: 0;
+  overflow: hidden;
+  /* transition: text-shadow 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out; */
+  text-shadow: 0 0 10px rgb(118, 242, 159);
+  animation: aparicion 0.2s steps(200) forwards,
+  desplazar-luz 2s steps(200) infinite;
+}
+
+/* .tipeoled:hover{
+  color: rgb(238, 238, 238);
+  text-shadow: 0 0 5px rgb(118, 242, 159);
+} */
+
+@keyframes desplazar-luz {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 0 5px rgb(118, 242, 159); /* Elimina el text-shadow al final */
+  }
+}
+
+@keyframes aparicion {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    top:0px
+  }
+}
+
+.tipeoled span:nth-child(1){
+  animation-delay: 0s;
+}
+.tipeoled span:nth-child(2){
+  animation-delay: 0.1s;
+}
+.tipeoled span:nth-child(3){
+  animation-delay: 0.2s;
+}
+.tipeoled span:nth-child(4){
+  animation-delay: 0.3s;
+}
+.tipeoled span:nth-child(5){
+  animation-delay: 0.4s;
+}
+.tipeoled span:nth-child(6){
+  animation-delay: 0.5s;
+}
+.tipeoled span:nth-child(7){
+  animation-delay: 0.6s;
+}
+.tipeoled span:nth-child(8){
+  animation-delay: 0.7s;
+}
+.tipeoled span:nth-child(9){
+  animation-delay: 0.8s;
+}
+.tipeoled span:nth-child(10){
+  animation-delay: 0.9s;
+}
+.tipeoled span:nth-child(11){
+  animation-delay: 1s;
+}
+.tipeoled span:nth-child(12){
+  animation-delay: 1.1s;
+}
+.tipeoled span:nth-child(13){
+  animation-delay: 1.2s;
+}
+
+
+.marcoled {
+  outline: 3px solid rgb(82, 248, 137);
+  width: 66.66%;
+  height: 75px;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 15px rgb(254, 254, 254);
+  transition: height 1s ease-in-out;
+  transition: width 1s ease-in-out;
+  transition: all 1s;
+}
+
+.dinamic-text li::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  border-left: 2px solid rgb(118, 242, 159);
+  animation: typing 3s steps(10) infinite;
+}
+
+.contenedor-imagen{
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+}
+
+.pruebawidth {
+  width: 100%;
+  height: 300px;
+}
+
+@keyframes slide {
+  100%{
+    top: -120px;
+  }
+}
+
+
+@keyframes typing {
+  40%,
+  60%{
+
+    left: calc(100% + 5px)
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes animacionIntro {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes animacionBar {
+  0% ,
+  100% {
+    border-color: rgba(241, 59, 59, 0);
+  }
+  40% {
+    border-color: rgba(136, 245, 117, 0.87);
+  }
+}
+
+
+@keyframes parpadeo {
+  0%{
+    opacity: 0;
+  }
+  2%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(118, 242, 159);
+  }
+  5%{
+    opacity: 0;
+  }
+  6%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(118, 242, 159);
+  }
+  8%{
+    opacity: 0;
+  }
+  9%, 81%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(118, 242, 159);
+    
+  }
+  82%{
+    opacity: 0;
+    
+  }
+  83%, 91%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(118, 242, 159);
+  }
+  92%{
+    opacity: 0;
+  }
+  93%,99%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgb(118, 242, 159);
+  }
+  100%{
+    opacity: 0;
+    
+  }
+}
+
+.habilidades{
+  @apply grayscale w-12 h-12 transition-all duration-500 hover:grayscale-0  hover:w-16 hover:h-16
+}
+
+.tipeoled{
+  @apply text-white text-6xl tracking-widest
+}
+
+.contacto-titulos{
+  @apply text-gray-600 text-2xl text-center tracking-widest 
+}
+
+.letrorled{
+  @apply text-gray-600 text-6xl text-center tracking-widest
+}
+
+.contacto{
+  @apply text-gray-600 text-center text-6xl tracking-widest
+}
+
+.btn {
+  @apply bg-gray-600 hover:bg-emerald-500 transition-all duration-500 shadow-lg hover:shadow-emerald-500/50  rounded w-32 h-12 
+}
+
+.seccionSobreMi{
+  @apply flex flex-wrap bg-black py-12 px-12 justify-around h-screen bg-black
+}
+
+.seccionContacto{
+  @apply flex flex-wrap bg-black py-12 px-12 justify-around h-1/2
+}
+
+.seccionProyectos{
+  @apply flex flex-wrap bg-black py-12 px-12 justify-around h-screen
+}
+
+.contTitulo {
+  @apply flex justify-center items-center h-screen bg-black
+}
+
+.titulo {
+  @apply text-gray-600 text-4xl text-center tracking-widest
+}
+
+.descripcion{
+  @apply text-gray-600 text-3xl text-center tracking-widest
+}
+
+.descripcion-proyecto{
+  @apply text-gray-600 text-2xl text-center tracking-widest
+}
+
+.habilidades-texto {
+  @apply text-gray-600 text-5xl text-center tracking-widest
+}
+
+.nav {
+  @apply text-xl text-gray-400 brightness-125 transition-all duration-500 hover:text-emerald-300  
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+@media (max-width:640px){
+  .titulo {
+    @apply text-gray-600 text-3xl text-center tracking-widest
+  }
+  .btn {
+    @apply bg-gray-600 hover:bg-emerald-500 transition-all duration-500 shadow-lg hover:shadow-emerald-500/50 rounded w-32 h-14 
+  }
+  .descripcion{
+    @apply text-gray-600 text-xl text-center tracking-widest
+  }
+
+}
+
+/*TODO arreglar responsividad */
+
+@media (max-width:920px){
+  .marcoled {
+    outline: 3px solid rgb(82, 248, 137);
+    width: 800px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    height: 75px;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 15px rgb(254, 254, 254);
+  }
+
+}
+
+.flecha-container {
+	position: relative;
+    display: block;
+    width: 100%;
+    height: 15px;
+}
+
+.text{
+ 	display: block;
+ 	border: 1px solid rgb(82, 248, 137);
+  background-color: rgb(82, 248, 137);
+  color: white;
+ 	padding: 2px;
+ 	margin-top: 2rem;
+ 	width: 98%;
+  animation: partiendo-flecha 4s steps(200) infinite;
+  opacity: 0;
+}
+
+.text2 {
+  display: block;
+  border: 1px solid rgb(82, 248, 137);
+ background-color: rgb(82, 248, 137);
+ color: white;
+  padding: 2px;
+  margin-top: 2rem;
+  width: 0;
+ animation: partiendo-flecha2 4s steps(200) infinite;
+
+ opacity: 0;
+}
+.text2::before{
+  transform: scaleX(-1);
+}
+
+@keyframes partiendo-flecha2 {
+  0%{
+    
+    width: 98%;
+    opacity: 0;
+  }
+  100%{
+    
+    width: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes partiendo-flecha {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 98%;
+    opacity: 1;
+  }
+}
+
+
+.flecha {
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(82, 248, 137);
+    position: absolute;
+    top: -6px;
+    animation: punta-flecha 4s steps(200) infinite;
+    opacity: 0;
+}
+
+.flecha2 {
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(82, 248, 137);
+    position: absolute;
+    top: -7px;
+    animation: punta-flecha2 4s steps(200) infinite;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+@keyframes punta-flecha2 {
+  0%{
+    right: 0px;
+    opacity: 0;
+  }
+  100%{
+    right: 362px;
+    opacity: 1;
+  }
+}
+
+@keyframes punta-flecha {
+  0%{
+    right: 432px;
+    opacity: 0;
+  }
+  100%{
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+#contacto {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+#contacto .fondo {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  outline: 3px solid rgb(0, 0, 0);
+  z-index: -1;
+  opacity: 1;
+}
+
+#contacto .fondo .pixel {
+
+  box-shadow: 0 0 10px rgb(254, 254, 254);
+  background-color: rgb(82, 248, 137);
+  position: absolute;
+  animation: pixels 3s linear infinite;
+}
+
+@keyframes pixels {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(750%, 6550%);
+    opacity: 0;
+  }
+}
+
+/* 
+.escritura-h3{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgb(118, 242, 159);
+    animation: animacionIntro  2.8s steps(23, end),
+    animacionBar 1s step-end infinite;
+} */
+
+/* @keyframes animacionIntro {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+} */
