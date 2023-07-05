@@ -47,7 +47,7 @@ const Perfil = () => {
       <div className='grid grid-rows-3 grid-flow-col '>
         <div className='flex justify-center items-end '>
           <Image
-          src="/7059588.jpg"
+          src="/inicio2.jpg"
           width={128}
           height={128}
           alt='imagen'

@@ -35,7 +35,7 @@ const SobreMi = () => {
             </div>
             <div className='row-start-2 col-start-2'>
             <Image
-            src="/7059588.jpg"
+            src="/sobremi2.jpg"
             width={220}
             height={250}
             alt='Imagen'
@@ -43,8 +43,11 @@ const SobreMi = () => {
           </div>
 
           <div  className='row-start-3 col-start-1 col-end-4'>
-            <h4 className='hidden md:block descripcion break-inside-avoid-column '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis ac dui sed iaculis. 
-                Nulla fermentum felis et velit tincidunt dignissim. Nunc auctor nibh vitae urna feugiat, a molestie dolor eleifend. 
+            <h4 className='hidden md:block descripcion break-inside-avoid-column '>
+            Autodidacta, apasionado y entusiasta desarrollador en busca de adquirir la mayor cantidad de conocimientos en las tecnologías. 
+            Tengo como objetivo profesional ser un desarrollador Full-stack solido para empezar y comenzar a realizar mis propios proyectos. 
+            Buenas prácticas laborales, buena comunicación en equipo y muy buen compañero de trabajo. 
+            Si tengo el tiempo y el conocimiento para lograr el objetivo solicitado, ahí estoy para ayudar y espero poder contar con mis compañeros de la misma manera.
             </h4>
           </div>
         </div>
@@ -58,7 +61,7 @@ const SobreMi = () => {
           </div>
           <div className='flex items-center space-x-24 justify-center '>
             <Image
-            src="/7059588.jpg"
+            src="/sobremi2.jpg"
             width={220}
             height={250}
             alt='Imagen'
@@ -81,8 +84,11 @@ const SobreMi = () => {
             </div>
           </div>
         
-              <h4 className='titulo break-inside-avoid-column '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis ac dui sed iaculis. 
-                  Nulla fermentum felis et velit tincidunt dignissim. Nunc auctor nibh vitae urna feugiat, a molestie dolor eleifend. 
+              <h4 className='titulo break-inside-avoid-column '>
+              Autodidacta, apasionado y entusiasta desarrollador en busca de adquirir la mayor cantidad de conocimientos en las tecnologías. 
+            Tengo como objetivo profesional ser un desarrollador Full-stack solido para empezar y comenzar a realizar mis propios proyectos. 
+            Buenas prácticas laborales, buena comunicación en equipo y muy buen compañero de trabajo. 
+            Si tengo el tiempo y el conocimiento para lograr el objetivo solicitado, ahí estoy para ayudar y espero poder contar con mis compañeros de la misma manera.
               </h4>
 
         </div>
