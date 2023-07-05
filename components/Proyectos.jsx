@@ -3,8 +3,8 @@ import Proyecto from './Proyecto'
 import Aprendiendo from './Aprendiendo'
 
 const Proyectos = () => {
-  const pagina1 = [{href:'https://www.google.com', imagen:'/portafolio.png', texto:'Texto por si a caso'}]
-  const pagina2 = [{href:'https://www.google.com', imagen:'/coomingsoon.jpg', texto:'Texto por si a caso'}]
+  const pagina1 = [{href:'https://iacastro.netlify.app', imagen:'/portafolio.png', texto:'Texto por si a caso'}]
+  const pagina2 = [{href:'https://iacastro.netlify.app', imagen:'/coomingsoon.jpg', texto:'Texto por si a caso'}]
 
   const tecnologias1 = [
     '/react.png',
