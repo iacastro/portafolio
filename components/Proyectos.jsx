@@ -55,7 +55,7 @@ const Proyectos = () => {
         </div>
         <div className=' descripcion-proyecto row-start-2 col-start-2 col-end-4'>
           <p>
-            En Desarrollo
+            En desarrollo
           </p>
         </div>
         <div className=' descripcion row-start-2 col-start-4'>

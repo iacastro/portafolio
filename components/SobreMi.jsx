@@ -86,9 +86,9 @@ const SobreMi = () => {
         
               <h4 className='titulo break-inside-avoid-column '>
               Autodidacta, apasionado y entusiasta desarrollador en busca de adquirir la mayor cantidad de conocimientos en las tecnologías. 
-            Tengo como objetivo profesional ser un desarrollador Full-stack solido para empezar y comenzar a realizar mis propios proyectos. 
-            Buenas prácticas laborales, buena comunicación en equipo y muy buen compañero de trabajo. 
-            Si tengo el tiempo y el conocimiento para lograr el objetivo solicitado, ahí estoy para ayudar y espero poder contar con mis compañeros de la misma manera.
+              Tengo como objetivo profesional ser un desarrollador Full-stack solido para empezar y comenzar a realizar mis propios proyectos. 
+              Buenas prácticas laborales, buena comunicación en equipo y muy buen compañero de trabajo. 
+              Si tengo el tiempo y el conocimiento para lograr el objetivo solicitado, ahí estoy para ayudar y espero poder contar con mis compañeros de la misma manera.
               </h4>
 
         </div>

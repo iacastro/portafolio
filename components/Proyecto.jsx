@@ -19,7 +19,7 @@ const Proyecto = (props) => {
             <Image
             src={imagen}
             width={350}
-            height={350}
+            height={300}
             alt={`Imagen ${texto}`}/>
           </Link>
           {/* <div className='flecha-container'>
