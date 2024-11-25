@@ -8,7 +8,12 @@ const Habilidades = () => {
         '/bootstrap.png',
         '/html.png',
         '/javascript.png',
-        '/django.png'
+        '/django.png',
+        '/postgres.png',
+        '/react.png',
+        '/tailwind.png',
+        '/nodejss.png',
+        '/Apex.jpg'
     ]
   return (
     <Habilidad habilidades = {imagenes}/>

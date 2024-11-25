@@ -9,16 +9,16 @@ const Habilidad = (props) => {
   }
 
   return (
-    <div className='grid justify-items-center grid-rows-1 gap-y-4 grid-flow-col'>
+    <div className={`grid justify-items-center grid-cols-${habilidades.length}`}>
       {habilidades.map((imagen, index) => (
-        <div>
+        <div key={index} className="flex items-center justify-center m-1">
           <Image
           key={index}
           src={imagen}
           width={100}
           height={100}
           alt={`Image ${index}`}
-          className='habilidades object-contain '/>
+          className='habilidades object-contain'/>
         </div>
       ))}      
     </div>
