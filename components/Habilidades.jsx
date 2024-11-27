@@ -13,6 +13,7 @@ const Habilidades = () => {
         '/react.png',
         '/tailwind.png',
         '/nodejss.png',
+        '/R_logo.png',
         '/Apex.jpg'
     ]
   return (

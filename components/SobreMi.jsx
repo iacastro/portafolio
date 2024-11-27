@@ -5,8 +5,8 @@ import Aprendiendo from './Aprendiendo'
 
 const SobreMi = () => {
   const aprendiendo = [
-    '/R_logo.png',
-    '/image.png'
+    '/image.png',
+    '/wordpress3.png'
   ]
 
   return (
