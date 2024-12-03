@@ -123,26 +123,65 @@ const Proyectos = () => {
               </h4>
         </div>
 
-        <div className='grid grid-rows-3 grid-cols-1 justify-items-center'>
-          
-          <div className='row-start-1 col-start-1 '>
-              <Proyecto proyecto = {pagina1}/>
-          </div>
-          <div className=' descripcion-proyecto'>
-            <p>Proyecto de portafolio el cual tiene como fin dar a conocer al creador, sus habilidades
-              destacadas y actualmente aprendidas como también demostrar los proyectos personales a la fecha elavorados
-              por este. 
-            </p>
-          </div>
-          <div className='p-5'>
-            <p className='descripcion'>Tecnologias usadas</p>
-            <div className='contenedor-imagen my-4 just space-x-8'>
-              <Aprendiendo habilidades = {tecnologias1}/>
+        <div className='grid grid-cols-1 justify-items-center'>
+          <div className='row-start-1 col-start-1'>
+
+            <div className='flex justify-center'>
+                <Proyecto proyecto = {pagina1}/>
+            </div>
+            <div className=' descripcion-proyecto'>
+              <p>Proyecto de portafolio el cual tiene como fin dar a conocer al creador, sus habilidades
+                destacadas y actualmente aprendidas como también demostrar los proyectos personales a la fecha elavorados
+                por este. 
+              </p>
+            </div>
+            <div className='p-5'>
+              <p className='descripcion'>Tecnologias usadas</p>
+              <div className='contenedor-imagen my-4 just space-x-8'>
+                <Aprendiendo habilidades = {tecnologias1}/>
+              </div>
             </div>
           </div>
+          <div className='separador-led'></div>
+          <div>
+            <div className='row-start-2 col-start-1'>
 
-         
+              <div className='flex justify-center'>
+              <Proyecto proyecto = {pagina2}/>
+              </div>
+              <div className=' descripcion-proyecto'>
+                <p> Este proyecto esta realizado para previsualizar el catalogo de las temporadas acordada por el cliente Ellus.
+              Trabaje con Css para asignar estilos personalizados segun la necesidad de la empresa y la diagramación fue propuesta propia.
+              Se espera poder agregar funcionalidades pero este es la pagina piloto de momento.
+                </p>
+              </div>
+              <div className='p-5'>
+                <p className='descripcion'>Tecnologias usadas</p>
+                <div className='contenedor-imagen my-4 just space-x-8'>
+                  <Aprendiendo habilidades = {tecnologias2}/>
+                </div>
+              </div>
+            </div>
+          <div className='separador-led'></div>
+          <div className='row-start-2 col-start-1'>
+
+              <div className='flex justify-center'>
+              <Proyecto proyecto = {pagina3}/>
+              </div>
+              <div className=' descripcion-proyecto'>
+                <p> Similar al anterior proyecto. Catalogo para mostrar a los clientes de la marca Ilgioco.
+                A diferencia del anterior, en este proyecto tuve que utilizar mas conocimientos de SQL para poder desarrollarlo.
+                </p>
+              </div>
+              <div className='p-5'>
+                <p className='descripcion'>Tecnologias usadas</p>
+                <div className='contenedor-imagen my-4 just space-x-8'>
+                  <Aprendiendo habilidades = {tecnologias2}/>
+                </div>
+              </div>
+            </div>
         </div>
+        
       {/* 
       <div className='md:hidden'>
 
@@ -200,6 +239,7 @@ const Proyectos = () => {
             </div>
           </div>
         </div>*/}
+      </div>
       </div>
     </section>
   )

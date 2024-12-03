@@ -297,7 +297,7 @@ h4.habilidades-texto.break-inside-avoid-column:hover{
 }
 
 .seccionProyectos{
-  @apply flex flex-wrap bg-black py-12 px-12 justify-around h-screen
+  @apply flex flex-wrap bg-black py-12 px-12 justify-around h-auto
 }
 
 .contTitulo {
@@ -317,7 +317,12 @@ h4.habilidades-texto.break-inside-avoid-column:hover{
 }
 
 .descripcion-proyecto{
-  @apply text-gray-600 text-2xl text-center tracking-widest
+  @apply text-gray-600 text-2xl text-center tracking-widest p-10
+}
+
+
+.separador-led{
+  @apply h-0.5 w-full bg-green-400 shadow-2xl shadow-green-50 shadow rounded-md mb-10
 }
 
 .habilidades-texto {
